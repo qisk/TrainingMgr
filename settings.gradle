@@ -1,0 +1,6 @@
+include ':common'
+include ':baselib'
+include ':settings'
+include ':addtraining'
+include ':app'
+rootProject.name = "TrainingMgr"
