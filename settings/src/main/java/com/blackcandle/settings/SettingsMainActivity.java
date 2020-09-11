@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.blackcandle.annotation.BRouter;
+
+@BRouter("settings/main")
 public class SettingsMainActivity extends AppCompatActivity {
 
     @Override

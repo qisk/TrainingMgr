@@ -2,6 +2,7 @@ package com.blackcandle.trainingmgr;
 
 import android.os.Bundle;
 
+import com.blackcandle.annotation.BRouter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+@BRouter("app/main")
 public class MainActivity extends AppCompatActivity {
 
     @Override

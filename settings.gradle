@@ -1,3 +1,5 @@
+include ':annotation_compiler'
+include ':annotation'
 include ':common'
 include ':baselib'
 include ':settings'

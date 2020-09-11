@@ -51,4 +51,7 @@ dependencies {
     rootProject.ext.dependencies.other.each {
         implementation project(it)
     }
+    // 这⾥要⽤annotationProcessor让编译器知道这是⼀个注解处理器
+    // 编译时，才会调用注解处理器生成文件，生成目录在build/source/apt下面
+    annotationProcessor project(path: ':annotation_compiler')
 }
