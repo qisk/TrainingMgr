@@ -73,6 +73,9 @@ public class Router {
         if(bundle!=null){
             intent.putExtras(bundle);
         }
+
+        // 这里可能会有问题：只用FLAG_ACTIVITY_NEW_TASK，对于已经打开的Activity，就会创建一个新的实例。
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK );
         context.startActivity(intent);
     }
 

@@ -9,4 +9,5 @@
 
     <string name="hello_first_fragment">addtraning first fragment</string>
     <string name="hello_second_fragment">addtraning second fragment. Arg: %1$s</string>
+    <string name="addtraining_title">新建培训</string>
 </resources>
