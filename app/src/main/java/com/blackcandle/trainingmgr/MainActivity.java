@@ -3,12 +3,14 @@ package com.blackcandle.trainingmgr;
 import android.os.Bundle;
 
 import com.blackcandle.annotation.BRouter;
+import com.blackcandle.baselib.event.LiveDataBus;
 import com.blackcandle.baselib.router.Router;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.MutableLiveData;
 
 import android.view.View;
 
@@ -29,11 +31,15 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 发送事件1
+                MutableLiveData<String> liveData = LiveDataBus.getInstance().with("app:data1",String.class);
+                liveData.postValue("app:MainActivity post data1");
+
+                // 路由跳转
                 Router.getInstance().jumpActivity("addtraining/main", null);
                 /*
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-
                  */
             }
         });
@@ -55,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            // 发送事件2
+            MutableLiveData<String> liveData = LiveDataBus.getInstance().with("app:data2",String.class);
+            liveData.postValue("app:MainActivity post data2");
+
+            // 路由跳转
             Router.getInstance().jumpActivity("settings/main", null);
             return true;
         }
