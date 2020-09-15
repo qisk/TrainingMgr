@@ -3,6 +3,18 @@
 ## 产品简介
 兴趣班管理工具，用一个不断迭代的实际产品，去验证各种Android新技术（组件化，JetPack，ButterKnife, Dagger，Material Design等），其中一些框架都用到了APT编译时技术。
 
+## 克隆代码仓库及代码分支切换方法
+安装git
+
+新建一个TrainingMgr目录，到该目录下执行git clone git@github.com:qisk/TrainingMgr.git
+
+在TrainingMgr目录下，使用git branch -av查看所有的分支
+
+可以使用git checkout <分支名>，切换到不同的分支，如：
+git checkout components_empty_framework
+git checkout components_customrouter_livedataevent
+git checkout master
+
 ## 开发环境
 操作系统：macOS Catalina 10.15.6
 
