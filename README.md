@@ -17,7 +17,9 @@ Android SDK版本：API 30（Android R）
 
 ## 分支描述
 master：最新代码分支
+
 components_empty_framework：组件化初始框架分支
+
 components_customrouter_livedataevent：使用自定义Router实现组件间页面跳转，使用livedata实现组件间事件通讯
 
 
