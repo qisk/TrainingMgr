@@ -11,9 +11,13 @@
 在TrainingMgr目录下，使用git branch -av查看所有的分支
 
 可以使用git checkout <分支名>，切换到不同的分支，如：
+
 git checkout components_empty_framework
+
 git checkout components_customrouter_livedataevent
+
 git checkout master
+
 
 ## 开发环境
 操作系统：macOS Catalina 10.15.6
