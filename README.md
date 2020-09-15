@@ -5,10 +5,15 @@
 
 ## 开发环境
 操作系统：macOS Catalina 10.15.6
+
 IDE：Android Studio 4.1 Build #AI-193
+
 Gradle版本：gradle-5.2.1（需要自行修改gradle-warpper的distributionUrl路径）
+
 Gradle plugin版本：3.4.1
+
 Android SDK版本：API 30（Android R）
+
 
 ## 分支描述
 master：最新代码分支
