@@ -54,6 +54,7 @@ def getCommitIdAndAuthor() {
 	def text = ""
 	for (changeSetList in currentBuild.changeSets) {
 		for (changeSet in changeSetList) {
+                echo 'changeSet=${changeSet}'
 				text += "${changeSet.commitId.substring(0, 7)}_${changeSet.author}\n"
 		}
 	}
