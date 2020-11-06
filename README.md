@@ -38,8 +38,9 @@ components_empty_framework：组件化初始框架分支
 
 components_customrouter_livedataevent：使用自定义Router实现组件间页面跳转，使用livedata实现组件间事件通讯
 
-## 支持Jenkins推送通知
-
+## 支持Jenkins推送通知的Job
+GitHub_Freestyle_Test
+GitHub_Pipeline_Test
 
 ## Android新技术简介
 
