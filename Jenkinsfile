@@ -9,12 +9,14 @@ pipeline {
         stage('getCommitMessage') {
             steps {
                 script {
-                  def commit_message = getCommitMessage()
-                  echo "commit_message=${commit_message}"
+                    echo 'get android project commit message'
 
-                  def commitIdAndAuthor = getCommitIdAndAuthor()
-                  echo "commitIdAndAuthor=${commitIdAndAuthor}"
-                  currentBuild.displayName = "${commitIdAndAuthor}"
+                    def commit_message = getCommitMessage()
+                    echo "commit_message=${commit_message}"
+
+                    def commitIdAndAuthor = getCommitIdAndAuthor()
+                    echo "commitIdAndAuthor=${commitIdAndAuthor}"
+                    currentBuild.displayName = "${commitIdAndAuthor}"
                 }
             }
         }
