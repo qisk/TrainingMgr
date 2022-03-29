@@ -1,5 +1,7 @@
 # TrainingMgr
 
+Test 111
+
 ## 产品简介
 兴趣班管理工具，用一个不断迭代的实际产品，去验证各种Android新技术（组件化，JetPack，ButterKnife, Dagger，Material Design等），其中一些框架都用到了APT编译时技术。
 
@@ -18,6 +20,7 @@ git checkout components_customrouter_livedataevent
 
 git checkout master
 
+test GitHub push 111
 
 ## 开发环境
 操作系统：macOS Catalina 10.15.6
